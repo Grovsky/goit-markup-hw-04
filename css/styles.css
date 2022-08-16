@@ -152,6 +152,7 @@ button {
     ),
     url(../images/hero-bg.jpg);
   max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -300,15 +301,15 @@ button {
   align-items: center;
   background-color: var(--special-text-color);
   justify-content: center;
-  /* color: var(--icon-color); */
-  fill: var(--icon-color);
+  color: var(--icon-color);
+  /* fill: var(--icon-color); */
 }
-/* .team-soc-icon {
+.team-soc-icon {
   fill: currentColor;
-} */
+}
 .team-soc-link:hover,
 .team-soc-link:focus {
-  fill: #fff;
+  color: var(--special-text-color);
   background-color: var(--accent-color);
 }
 /* .team-soc-link:hover .team-soc-icon,
@@ -336,13 +337,17 @@ button {
   align-items: center;
   background-color: var(--special-text-color);
   justify-content: center;
-  fill: var(--icon-color);
+  color: var(--icon-color);
+  /* fill: var(--icon-color); */
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.clients-icon {
+  fill: currentColor;
+}
 .clients-link:hover,
 .clients-link:focus {
-  fill: #2196f3;
+  color: var(--accent-color);
   border: 1px solid #2196f3;
 }
 /* -----------------------------------------Portfolio---------------------------------------- */
@@ -383,14 +388,23 @@ button {
   border: 1px solid var(--border-color);
   border-top: none;
 }
-.portfolio-item {
+.portfolio-link {
+  width: 370px;
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/* .portfolio-item {
   width: 370px;
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 .portfolio-title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -442,11 +456,13 @@ button {
 }
 .footer-container {
   display: flex;
-  gap: 70px;
+  align-items: baseline;
+}
+.footer-container-address {
+  margin-right: 70px;
 }
 .footer-soc-title {
-  padding-top: 12px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14em;
   text-transform: uppercase;
