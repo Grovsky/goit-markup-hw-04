@@ -32,6 +32,7 @@ p {
   margin: 0;
 }
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -55,17 +56,10 @@ button {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
-}
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
 }
 .link {
   text-decoration: none;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -79,12 +73,9 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 /* -----------------------Header-------------------- */
 .header {
   border-bottom: 1px solid var(--line-color);
-  padding-bottom: 25px;
-  padding-top: 24px;
 }
 .header-container {
   display: flex;
@@ -108,9 +99,11 @@ button {
   margin-right: 50px;
 }
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
   color: var(--title-color);
 }
 .nav-link:hover,
@@ -134,6 +127,7 @@ button {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 32px 0;
   color: var(--text-color);
 }
 .contacts-link:hover,
@@ -145,14 +139,14 @@ button {
 }
 /* ----------------------Hero--------------------- */
 .hero {
-  background: var(--hero-background);
+  text-align: center;
+  background-color: var(--hero-background);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-bg.jpg);
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,7 +162,7 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--special-text-color);
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -177,18 +171,16 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--special-text-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: var(--accent-background);
+  background-color: var(--accent-background);
 }
 /* -----------------------------Peculiarities-------------------------------- */
 .peculiarities-list {
@@ -249,7 +241,7 @@ button {
 }
 /* ---------------------------------Team----------------------------------- */
 .team {
-  background: var(--secondary-background);
+  background-color: var(--secondary-background);
 }
 .team-list {
   display: flex;
@@ -264,7 +256,7 @@ button {
   margin-bottom: 50px;
 }
 .team-item {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30) / 4);
   background-color: var(--special-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -373,12 +365,12 @@ button {
   border: none;
   border-radius: 4px;
   color: var(--title-color);
-  background: var(--secondary-background);
+  background-color: var(--secondary-background);
   padding: 6px 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--special-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -389,7 +381,7 @@ button {
   border-top: none;
 }
 .portfolio-link {
-  width: 370px;
+  flex-basis: calc((100% - 3 * 30) / 2);
   display: block;
 }
 .portfolio-link:hover,
@@ -397,14 +389,6 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/* .portfolio-item {
-  width: 370px;
-}
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
 .portfolio-title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -420,7 +404,7 @@ button {
 }
 /* ------------------------------------------Footer-------------------------------------- */
 .footer {
-  background: var(--footer-background);
+  background-color: var(--footer-background);
   padding-bottom: 60px;
   padding-top: 60px;
 }
