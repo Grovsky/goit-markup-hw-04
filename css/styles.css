@@ -177,6 +177,7 @@ button {
   color: var(--special-text-color);
   background-color: var(--accent-color);
   padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -256,7 +257,7 @@ button {
   margin-bottom: 50px;
 }
 .team-item {
-  flex-basis: calc((100% - 3 * 30) / 4);
+  flex-basis: calc((100% - 3 * 30px) / 4);
   background-color: var(--special-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -380,8 +381,10 @@ button {
   border: 1px solid var(--border-color);
   border-top: none;
 }
+.portfolio-item {
+  flex-basis: calc((100% - 3 * 30px) / 2);
+}
 .portfolio-link {
-  flex-basis: calc((100% - 3 * 30) / 2);
   display: block;
 }
 .portfolio-link:hover,
